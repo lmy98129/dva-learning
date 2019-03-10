@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './UserSearch.less';
+import styles from './UserSearch.css';
 import { Button, Row, Col } from 'antd'
 import Search from 'antd/lib/input/Search';
 

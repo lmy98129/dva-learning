@@ -1,10 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './MainLayout.less';
+import styles from './index.css';
 import Header from './Header';
+import withRouter from 'umi/withRouter';
 
-// 包含默认头部的布局组件
-function MainLayout({ children, location }) {
+function Layout({ children, location }) {
   return (
     <div className={styles.normal}>
       <Header location={location} />
@@ -17,9 +16,4 @@ function MainLayout({ children, location }) {
   );
 }
 
-MainLayout.propTypes = {
-  children: PropTypes.element.isRequired,
-  location: PropTypes.object,
-};
-
-export default MainLayout;
+export default withRouter(Layout);
